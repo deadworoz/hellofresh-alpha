@@ -4,3 +4,6 @@ build::
 
 shell::
 	$(DOCKER_COMPOSE) run --rm --user `id -u`:`id -g` php
+
+run::
+	$(DOCKER_COMPOSE) --progress quiet run --rm --user `id -u`:`id -g` php ./bin/console app:recipe-stats-calculator $(params)
