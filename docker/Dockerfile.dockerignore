@@ -1,0 +1,10 @@
+.composer
+var
+vendor
+
+# fixtures
+*_fixtures.tar.gz
+*_fixtures.json
+
+# dev
+.idea
