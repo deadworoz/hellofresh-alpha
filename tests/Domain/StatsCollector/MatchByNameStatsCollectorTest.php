@@ -29,7 +29,7 @@ class MatchByNameStatsCollectorTest extends TestCase
         $this->assertEquals($expectedStats, $statsCollector->getStats());
     }
 
-    public function provider(): Generator
+    public static function provider(): Generator
     {
         yield 'no words' => [
             'words' => [],

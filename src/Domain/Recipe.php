@@ -13,7 +13,7 @@ readonly class Recipe
         private string $recipe,
         string $delivery,
     ) {
-        list(, $timeRange) = explode(' ', $delivery);
+        $timeRange = strpbrk($delivery, ' '); // skip day of week
         $this->deliveryTimeRange = new TimeRange($timeRange);
     }
 

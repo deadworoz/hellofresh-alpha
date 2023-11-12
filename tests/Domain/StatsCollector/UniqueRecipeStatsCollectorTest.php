@@ -28,7 +28,7 @@ class UniqueRecipeStatsCollectorTest extends TestCase
         $this->assertEquals($expectedStats, $statsCollector->getStats());
     }
 
-    public function provider(): Generator
+    public static function provider(): Generator
     {
         yield 'no recipes' => [
             'recipes' => [],
